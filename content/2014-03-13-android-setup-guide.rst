@@ -4,8 +4,6 @@ Android setup guide
 :category: guide
 :tags: android, guide
 
-.. contents:: :depth: 2
-
 
 Sony Xperia Z 4.3.0
 ===================

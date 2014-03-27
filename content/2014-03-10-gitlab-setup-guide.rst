@@ -5,8 +5,6 @@ GitLab setup guide
 :tags: gitlab, git, bitnami, guide
 
 
-.. contents::
-
 In this guide, we use `Bitnami GitLab virtual machine`_ to deploy the GitLab server.
 
 .. _`Bitnami GitLab virtual machine`: http://bitnami.com/stack/gitlab

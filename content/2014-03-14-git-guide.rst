@@ -4,8 +4,6 @@ Git guide
 :category: guide
 :tags: guide, git
 
-.. contents:: :depth: 2
-
 
 GitHub Flow
 ===========
