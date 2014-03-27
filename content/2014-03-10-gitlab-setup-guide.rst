@@ -3,7 +3,7 @@ GitLab setup guide
 
 :category: guide
 :tags: gitlab, git, bitnami, guide
-:status: draft
+
 
 .. contents::
 
