@@ -34,6 +34,8 @@ DEFAULT_PAGINATION = 10
 # ==========================================================
 AUTHOR = u'Jiayi Zhou'
 SITENAME = u'Jiayi Zhou'
+SITESUBTITLE = 'elegance maker'
+
 SITEURL = 'http://jiayi.ideaera.com'
 
 TIMEZONE = 'Asia/Taipei'
@@ -55,15 +57,19 @@ EXTRA_PATH_METADATA = {
 FEED_ATOM = 'feeds/atom.xml'
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
-
-# ==========================================================
-# Theme
-
-SITESUBTITLE = 'elegance maker'
-
 LINKS = ()
 SOCIAL = ()
 
-THEME = 'pelican-bootstrap3'
-THEME = 'pelican-simplegrey'
-THEME = 'plumage'
+
+# ==========================================================
+THEME = 'pelican-elegant'
+
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))  # add search, 404
+
+PLUGIN_PATH = 'plugin'
+PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
+
+SITEMAP = {
+    'format': 'xml',
+}
+
