@@ -3,7 +3,6 @@ Definition of done (DoD)
 
 :category: sdlc
 :tags: agile, user story, sdlc
-:status: draft
 
 Definition of done for user story
 =================================
