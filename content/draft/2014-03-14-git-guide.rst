@@ -1,6 +1,7 @@
 Git guide
 #########
 
+:category: guide
 :tags: guide, git
 
 .. contents:: :depth: 2
@@ -9,9 +10,9 @@ Git guide
 GitHub Flow
 ===========
 
-GitHub Flow in the Browser · GitHub Help
-https://help.github.com/articles/github-flow-in-the-browser
+#. `GitHub Flow in the Browser · GitHub Help`__
 
+__ https://help.github.com/articles/github-flow-in-the-browser
 
 
 Naming conventions
@@ -32,6 +33,13 @@ Two-dimensional labelling
    #. high priority
    #. low priority
 
+#. Prioritization
+
+   #. must
+   #. should
+   #. could
+   #. wont
+
 #. Component
 
    #. dashboard
@@ -42,8 +50,22 @@ Two-dimensional labelling
 
    #. issue-next
 
-Using Github Issues Effectively
-http://www.stateofcode.com/2013/06/using-github-issues-effectively/
+#. GitHub
+
+   #. bug
+   #. duplicate
+   #. enhancement
+   #. invalid
+   #. question
+   #. wontfix
+
+#. misc
+
+   #. doc
+
+`Using Github Issues Effectively`__
+
+__ http://www.stateofcode.com/2013/06/using-github-issues-effectively/
 
 
 
@@ -72,23 +94,28 @@ e.g., ::
    v1.0.0-beta+exp.sha.5114f85
 
 
-Semantic Versioning 2.0.0
-http://semver.org/
+`Semantic Versioning 2.0.0`__
+
+__ http://semver.org/
 
 
 .gitignore
 ==========
 
 
-
 How to
 ======
 
-Rebase
-------
+Cache password on Mac
+---------------------
 
-Interactive rebase · GitHub Help
-https://help.github.com/articles/interactive-rebase
+.. code-block:: sh
+
+   git config --global credential.helper osxkeychain
+
+`Set Up Git · GitHub Help`__
+
+__ https://help.github.com/articles/set-up-git#platform-mac
 
 
 Close issue via commit message / pull requests
@@ -97,8 +124,9 @@ Close issue via commit message / pull requests
 GitHub
 ^^^^^^
 
-Closing issues via commit messages · GitHub Help
-https://help.github.com/articles/closing-issues-via-commit-messages
+`Closing issues via commit messages · GitHub Help`__
+
+__ https://help.github.com/articles/closing-issues-via-commit-messages
 
 
 GitLab
@@ -126,6 +154,14 @@ Step 2. Merge the branch and push the changes to GitLab
    git checkout mastergit merge --no-ff jayzhou/proj2-mastergit push origin master
 
 
+Rebase
+------
+
+`Interactive rebase · GitHub Help`__
+
+__ https://help.github.com/articles/interactive-rebase
+
+
 Set remote address
 ------------------
 
@@ -137,23 +173,23 @@ Set remote address
 Sync a fork
 -----------
 
-Syncing a fork · GitHub Help
-https://help.github.com/articles/syncing-a-fork
+`Syncing a fork · GitHub Help`__
 
-Pushing to a remote · GitHub Help
-https://help.github.com/articles/pushing-to-a-remote#pushing-a-branch
+__ https://help.github.com/articles/syncing-a-fork
+
+`Pushing to a remote · GitHub Help`__
+
+__ https://help.github.com/articles/pushing-to-a-remote#pushing-a-branch
 
 
 Update GitHub forked repository
 -------------------------------
 
-How to update GitHub forked repository? - Stack Overflow
-http://stackoverflow.com/questions/7244321/how-to-update-github-forked-repository
+`How to update GitHub forked repository? - Stack Overflow`__
 
-Keeping A GitHub Fork Updated
-http://robots.thoughtbot.com/keeping-a-github-fork-updated
+__ http://stackoverflow.com/questions/7244321/how-to-update-github-forked-repository
 
+`Keeping A GitHub Fork Updated`__
 
-FAQ
-===
+__ http://robots.thoughtbot.com/keeping-a-github-fork-updated
 
