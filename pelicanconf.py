@@ -60,6 +60,8 @@ FEED_ATOM = 'feeds/atom.xml'
 LINKS = ()
 SOCIAL = ()
 
+GOOGLE_ANALYTICS = 'UA-49479618-1'
+
 
 # ==========================================================
 THEME = 'theme/pelican-elegant'
