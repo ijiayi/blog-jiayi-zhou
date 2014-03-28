@@ -51,7 +51,7 @@ FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 
 STATIC_PATHS = ['images', 'extra/hello.txt']
 EXTRA_PATH_METADATA = {
-    'extra/hello.txt': {'path': 'hello.txt'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 FEED_ATOM = 'feeds/atom.xml'
