@@ -49,7 +49,7 @@ PYGMENTS_RST_OPTIONS = {'linenos': 'none'}  # 'linenos': 'table'
 
 FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 
-STATIC_PATHS = ['images', 'extra/hello.txt']
+STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
 }
@@ -62,7 +62,7 @@ SOCIAL = ()
 
 
 # ==========================================================
-THEME = 'pelican-elegant'
+THEME = 'theme/pelican-elegant'
 
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))  # add search, 404
 
