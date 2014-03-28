@@ -1,1 +1,9 @@
 .idea
+output
+srv.pid
+pelican.pid
+develop_server.sh
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
