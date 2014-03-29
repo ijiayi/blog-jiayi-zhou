@@ -33,8 +33,8 @@ def foo(): pass
 
 - Use `Status: hidden` to hide the article / page
 - Use `Status: draft` to create draft article / page (under `/drafts`)
-- Use [link]({filename}/cat/article2.rst) to link to content root
-- Use [link]({filename}cat/article2.rst) to link to current root
+- Use `[link]({filename}/cat/article2.rst)` to link to content root
+- Use `[link]({filename}cat/article2.rst)` to link to current root
 - Use `{tag}tagname` and `{category}catname` to link to tags and categories
 
 # Markdown
