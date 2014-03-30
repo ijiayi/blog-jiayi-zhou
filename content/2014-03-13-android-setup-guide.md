@@ -2,6 +2,7 @@ Title: Android setup guide
 Category: guide
 Tags: android, guide
 
+[TOC]
 
 # Sony Xperia Z 4.3.0
 

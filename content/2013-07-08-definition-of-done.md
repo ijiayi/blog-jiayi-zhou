@@ -2,6 +2,8 @@ Title: Definition of done (DoD)
 Category: sdlc
 Tags: agile, user story, sdlc
 
+[TOC]
+
 # Definition of done for user story
 
 1. Meet acceptance criteria

@@ -4,6 +4,7 @@ Article writing guide
 :category: guide
 :tags: pelican, rst, guide, template
 
+.. contents::
 
 Template
 ========

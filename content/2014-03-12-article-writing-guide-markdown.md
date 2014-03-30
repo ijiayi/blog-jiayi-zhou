@@ -2,6 +2,7 @@ Title: Article writing guide in markdown
 Category: guide
 Tags: pelican, markdown, guide
 
+[TOC]
 
 # Template
 
@@ -10,6 +11,8 @@ Tags: pelican, markdown, guide
 Title:
 Category:
 Tags:
+
+[TOC]
 
 # Heading 1
 
