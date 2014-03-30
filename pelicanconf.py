@@ -34,7 +34,7 @@ DEFAULT_PAGINATION = 10
 # ==========================================================
 AUTHOR = u'Jiayi Zhou'
 SITENAME = u'Jiayi Zhou'
-SITESUBTITLE = 'elegance maker'
+SITESUBTITLE = 'elegant maker'
 
 SITEURL = 'http://jiayi.ideaera.com'
 
@@ -66,10 +66,11 @@ GOOGLE_ANALYTICS = 'UA-49479618-1'
 # ==========================================================
 THEME = 'theme/pelican-elegant'
 
-DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))  # add search, 404
-
 PLUGIN_PATH = 'plugin'
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))  # add search, 404
+
 
 SITEMAP = {
     'format': 'xml',
