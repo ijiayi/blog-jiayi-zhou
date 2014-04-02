@@ -1,15 +1,11 @@
 language: python
-
 branches:
   only:
     - master
-
 install:
   - pip install -r requirements.txt
-
 script:
   - make github_travis
-
-env: 
+env:
   global:
-    secure: "XwZajenvw0U6V4BOxJ3mL3FTbkHQOYgRf+3q/2nBNL40b2AQBVP/a4pbO4T7CXRcpwmvianKWG2TY4FIrQIjDtaJeTm9rLxGSntPIWiJ990vsmCYY9SnQywAfNwyLQElAiaYGV81YM3ujPDV1kWQn+1EfRLPOHuRJhtEI1LL2ZY="
+    secure: Rqm81apuZXSGe2bckw0Fu8j2M9bo4s3CRfNmo9sMcLkr+tu7+xRr6HkR4ul4dyYfkW6j8MOQz5SYpn9MmbznGYk367MlnDNQzbhQ6ltHMpN/fYEQvzGnrFsyG1V40E6fDwEoD0WgHgLCmjpMfsuWbJ4wIkcciQfIknX2QyDuQQc=
