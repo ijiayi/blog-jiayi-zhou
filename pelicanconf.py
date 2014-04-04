@@ -40,7 +40,7 @@ SITEURL = 'http://jiayi.ideaera.com'
 
 TIMEZONE = 'Asia/Taipei'
 
-DEFAULT_DATE_FORMAT = "%Y-%m-%d"
+DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # OUTPUT_RETENTION = ('.git')
@@ -71,8 +71,11 @@ PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))  # add search, 404
 
-
 SITEMAP = {
     'format': 'xml',
 }
+
+TAG_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
 

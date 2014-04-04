@@ -11,6 +11,7 @@ Tags: pelican, markdown, guide
 Title:
 Category:
 Tags:
+Modified: # elegant-pelican theme only
 
 [TOC]
 
