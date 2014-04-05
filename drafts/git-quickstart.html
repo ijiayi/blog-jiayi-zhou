@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jiayi Zhou" />
+        <meta name="copyright" content="Jiayi Zhou" />
+
+<meta name="keywords" content="git, github, guide, quickstart, , " />
+        <title>Git and GitHub flow quickstart  · Jiayi Zhou
+</title>
+        <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../theme/css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../theme/css/solarizedlight.css" media="screen">
+        <link rel="shortcut icon" href="../theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="../theme/images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="../theme/images/apple-touch-icon-144x144.png" />
+        <link rel="icon" href="../theme/images/apple-touch-icon-144x144.png" />
+        <link href="http://jiayi.ideaera.com/feeds/atom.xml" type="application/atom+xml" rel="alternate" title="Jiayi Zhou - Atom Feed" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49479618-1', 'ideaera.com');
+      ga('send', 'pageview');
+
+    </script>
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="../"><span class=site-name>Jiayi Zhou</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="..">Home</a></li>
+                            <li ><a href="../categories.html">Categories</a></li>
+                            <li ><a href="../tags.html">Tags</a></li>
+                            <li ><a href="../archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="../search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page_header span10 offset2">
+    <h1><a href="../git-quickstart.html"> Git and GitHub flow quickstart  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#atlassian-sourcetree">Atlassian SourceTree</a></li>
+</ul>
+</li>
+<li><a href="#clone-repository">Clone repository</a></li>
+<li><a href="#configure-username-and-email-address">Configure username and email address</a><ul>
+<li><a href="#use-global-config">Use global config</a></li>
+<li><a href="#use-repository-config">Use repository config</a></li>
+</ul>
+</li>
+<li><a href="#create-new-branch-for-developing-new-feature">Create new branch for developing new feature</a></li>
+<li><a href="#edit-and-commit-the-changes">Edit and commit the changes</a></li>
+<li><a href="#github-flow">GitHub flow</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+
+            
+<p>This article describes the GitHub flow using shared repository.</p>
+<p>The pull request is used for review processing.</p>
+<h1 id="tools">Tools</h1>
+<h2 id="atlassian-sourcetree">Atlassian SourceTree</h2>
+<p><a href="http://www.sourcetreeapp.com/">http://www.sourcetreeapp.com/</a></p>
+<h1 id="clone-repository">Clone repository</h1>
+<div class="highlight"><pre>git clone http://192.168.73.211/ivanji/hello-git.git
+</pre></div>
+<p><img alt="" src="../images/2014-04-01-git-quickstart-repository-path.png"/></p>
+<h1 id="configure-username-and-email-address">Configure username and email address</h1>
+<h3 id="use-global-config">Use global config</h3>
+<div class="highlight"><pre>git config --global user.name <span class="s2">"Jiayi Zhou"</span>
+git config --global user.email <span class="s2">"jiayizhou@domain.com"</span>
+</pre></div>
+<h3 id="use-repository-config">Use repository config</h3>
+<div class="highlight"><pre>git config user.name <span class="s2">"Jiayi Zhou"</span>
+git config user.email <span class="s2">"jiayizhou@domain.com"</span>
+</pre></div>
+<h1 id="create-new-branch-for-developing-new-feature">Create new branch for developing new feature</h1>
+<div class="highlight"><pre>git checkout master
+git checkout -b feature1
+</pre></div>
+<h1 id="edit-and-commit-the-changes">Edit and commit the changes</h1>
+<div class="highlight"><pre>git add &lt;edited files&gt;
+git commit
+</pre></div>
+<h1 id="github-flow">GitHub flow</h1>
+<p><img alt="" src="../images/2014-04-01-git-quickstart-github-flow.png"/></p>
+<ol>
+<li>
+<p>Create a branch from <code>master</code> for developing new feature.</p>
+<p><code>sh
+git checkout master
+git checkout -b awesome-feature</code></p>
+</li>
+<li>
+<p>Create, edit, rename, move, or delete files.</p>
+<p><img alt="Git file lifecycle" src="../images/2014-04-01-git-quickstart-git-file-lifecycle.jpeg"/></p>
+<p><code>sh
+git add &lt;edited files&gt;
+git commit</code></p>
+</li>
+<li>
+<p>Push the feature branch to the remote repository.</p>
+<p><code>sh
+git push origin awesome-feature</code></p>
+</li>
+<li>
+<p>Send a pull request from your branch with your changes to kick off a discussion.</p>
+</li>
+<li>
+<p>Make changes on your branch as needed. Your pull request will update automatically.</p>
+<p><code>sh
+git push origin awesome-feature</code></p>
+</li>
+<li>
+<p>Ask partners to merge the pull request, once the branch is ready to go, using the big green button.</p>
+</li>
+<li>
+<p>Tidy up your branches using the delete button in the pull request or on the branches page.</p>
+</li>
+</ol>
+<h1 id="reference">Reference</h1>
+<ol>
+<li><a href="https://help.github.com/articles/github-flow-in-the-browser">GitHub Flow in the Browser · GitHub Help</a></li>
+<li><a href="https://guides.github.com/overviews/flow/">Understanding the GitHub Flow · GitHub Guides</a></li>
+<li><a href="http://scottchacon.com/2011/08/31/github-flow.html">GitHub Flow – Scott Chacon</a></li>
+</ol>
+            <aside>
+            <hr/>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+ 
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2014-04-01T00:00:00">Apr 1, 2014</time>
+            <h4>Category</h4>
+            <a class="category-link" href="/categories.html#-ref"></a> 
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article"> 
+                <li><a href="/tags.html#git-ref">git
+                    <span>2</span>
+</a></li>
+                <li><a href="/tags.html#github-ref">github
+</a></li>
+                <li><a href="/tags.html#guide-ref">guide
+                    <span>5</span>
+</a></li>
+                <li><a href="/tags.html#quickstart-ref">quickstart
+</a></li>
+            </ul>
+
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-subtitle"><span class="site-name">Jiayi Zhou</span> - elegant maker</li>
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    </body>
+</html>

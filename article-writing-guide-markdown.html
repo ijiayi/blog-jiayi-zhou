@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jiayi Zhou" />
+        <meta name="copyright" content="Jiayi Zhou" />
+
+<meta name="keywords" content="pelican, markdown, guide, guide, " />
+        <title>Article writing guide in markdown  · Jiayi Zhou
+</title>
+        <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./theme/css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/solarizedlight.css" media="screen">
+        <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./theme/images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" />
+        <link rel="icon" href="./theme/images/apple-touch-icon-144x144.png" />
+        <link href="http://jiayi.ideaera.com/feeds/atom.xml" type="application/atom+xml" rel="alternate" title="Jiayi Zhou - Atom Feed" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49479618-1', 'ideaera.com');
+      ga('send', 'pageview');
+
+    </script>
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="./"><span class=site-name>Jiayi Zhou</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href=".">Home</a></li>
+                            <li ><a href="./categories.html">Categories</a></li>
+                            <li ><a href="./tags.html">Tags</a></li>
+                            <li ><a href="./archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page_header span10 offset2">
+    <h1><a href="./article-writing-guide-markdown.html"> Article writing guide in markdown  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#template">Template</a></li>
+<li><a href="#pelican">Pelican</a><ul>
+<li><a href="#syntax">Syntax</a></li>
+</ul>
+</li>
+<li><a href="#markdown">Markdown</a><ul>
+<li><a href="#online-tools">Online tools</a></li>
+</ul>
+</li>
+<li><a href="#sample">Sample</a><ul>
+<li><a href="#format">Format</a></li>
+<li><a href="#ordered-list">Ordered list</a></li>
+<li><a href="#unordered-list">Unordered list</a></li>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#blockquote">Blockquote</a></li>
+<li><a href="#links-and-images">Links and images</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#blocks">Blocks</a></li>
+<li><a href="#tables">Tables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+
+            
+<h1 id="template">Template</h1>
+<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span>
+<span class="n">Category</span><span class="o">:</span>
+<span class="n">Tags</span><span class="o">:</span>
+<span class="n">Modified</span><span class="o">:</span> <span class="err">#</span> <span class="n">elegant</span><span class="o">-</span><span class="n">pelican</span> <span class="n">theme</span> <span class="n">only</span>
+
+<span class="o">[</span><span class="n">TOC</span><span class="o">]</span>
+
+<span class="err">#</span> <span class="n">Heading</span> <span class="mi">1</span>
+
+<span class="err">```</span><span class="n">python</span>
+<span class="n">def</span> <span class="n">foo</span><span class="o">():</span> <span class="n">pass</span>
+
+<span class="o">\</span><span class="err">```</span> <span class="o">(</span><span class="n">remove</span> <span class="n">leading</span> <span class="n">backticks</span><span class="o">)</span>
+
+<span class="err">##</span> <span class="n">Heading</span> <span class="mf">1.1</span>
+
+<span class="err">##</span> <span class="n">Heading</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+<h1 id="pelican">Pelican</h1>
+<ul>
+<li><a href="http://docs.getpelican.com/en/latest/getting_started.html">Pelican getting started</a></li>
+</ul>
+<h2 id="syntax">Syntax</h2>
+<ul>
+<li>Use <code>Status: hidden</code> to hide the article / page</li>
+<li>Use <code>Status: draft</code> to create draft article / page (under <code>/drafts</code>)</li>
+<li>Use <code>[link]({filename}/cat/article2.rst)</code> to link to content root</li>
+<li>Use <code>[link]({filename}cat/article2.rst)</code> to link to current root</li>
+<li>Use <code>{tag}tagname</code> and <code>{category}catname</code> to link to tags and categories</li>
+</ul>
+<h1 id="markdown">Markdown</h1>
+<ul>
+<li><a href="http://www.unexpected-vortices.com/doc-notes/markdown-and-rest-compared.html">Pandoc Markdown and ReST Compared</a></li>
+<li><a href="https://help.github.com/articles/github-flavored-markdown">GitHub Flavored Markdown · GitHub Help</a></li>
+<li><a href="https://github.com/gitlabhq/gitlabhq/blob/master/doc/markdown/markdown.md">GitLab Flavored Markdown</a></li>
+</ul>
+<h2 id="online-tools">Online tools</h2>
+<ul>
+<li><a href="http://markable.in/editor/">Markable.in</a></li>
+<li><a href="http://dillinger.io/">Dillinger</a></li>
+<li><a href="http://www.markdownviewer.com/">online markdown viewer</a></li>
+</ul>
+<hr/>
+<h1 id="sample">Sample</h1>
+<h2 id="format">Format</h2>
+<p><em>italic</em>, <strong>bold</strong>, <code>code</code>, ~~strikeout text~~</p>
+<h2 id="ordered-list">Ordered list</h2>
+<ol>
+<li>numbered list 1</li>
+<li>numbered list 2<ol>
+<li>sub item 1</li>
+<li>sub item 2</li>
+</ol>
+</li>
+</ol>
+<h2 id="unordered-list">Unordered list</h2>
+<ul>
+<li>
+<p>unordered 1</p>
+<p>second paragraph (4 spaces)</p>
+</li>
+<li>
+<p>unordered 2</p>
+<ul>
+<li>unordered 2.1</li>
+<li>unordered 2.2</li>
+</ul>
+</li>
+</ul>
+<h2 id="definition">Definition</h2>
+<dl>
+<dt>foo</dt>
+<dd>a foo-like object</dd>
+</dl>
+<h2 id="blockquote">Blockquote</h2>
+<blockquote>
+<p>I said <em>this</em>.
+He said <em>taht</em>.</p>
+</blockquote>
+<h2 id="links-and-images">Links and images</h2>
+<p>A link to <a href="http://www.python.com">Python</a>. A link to <a href="http://www.python.com">Python</a>.</p>
+<p>http://www.python.com</p>
+<p><a href="http://www.python.com">http://www.python.com</a></p>
+<p>Another link method to <a href="http://www.python.com">Python</a></p>
+<p>Leave reference link empty <a href="http://www.python.com">link to python</a></p>
+<p>Alan Turing's 100th birthday</p>
+<p><img alt="alan" src="http://2.bp.blogspot.com/-PQv5GPMlNBA/T-T5RtCVJlI/AAAAAAAAAWQ/NqFyh4TUkS8/s1600/turing-timeline.png"/></p>
+<h2 id="misc">Misc</h2>
+<p>Triple * or - for horizontal line.</p>
+<hr/>
+<hr/>
+<p>One minor footnote <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> to be aware of.</p>
+<h2 id="blocks">Blocks</h2>
+<div class="highlight"><pre><span class="n">block</span> <span class="n">of</span> <span class="n">code</span> <span class="p">(</span><span class="n">use</span> <span class="k">for</span> <span class="n">spaces</span> <span class="n">indentation</span><span class="p">)</span>
+<span class="n">goes</span> <span class="n">like</span> <span class="n">this</span>
+</pre></div>
+<div class="highlight"><pre><span class="n">block</span> <span class="n">of</span> <span class="n">code</span> <span class="o">**</span><span class="n">triple</span><span class="o">-</span><span class="n">backtick</span><span class="o">**</span>
+<span class="n">goes</span> <span class="n">like</span> <span class="n">this</span>
+</pre></div>
+<div class="highlight"><pre><span class="n">block</span> <span class="n">of</span> <span class="n">code</span> <span class="o">**</span><span class="n">triple</span><span class="o">-</span><span class="n">tide</span><span class="o">**</span>
+<span class="n">goes</span> <span class="n">like</span> <span class="n">this</span>
+</pre></div>
+<h2 id="tables">Tables</h2>
+<p>Size  Color   Fragrance</p>
+<hr/>
+<p>9     Red     Excelsior
+10    Blue    Icey Cool</p>
+<hr/>
+<p>Orientation  Reasoning</p>
+<hr/>
+<p>leftward     Because it works well under
+             extreme depths and pressures.</p>
+<p>spinward     There's no reason to use
+             spinward. It will only
+             cause apoplexia.</p>
+<hr/>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Help</td>
+<td>~~Display the~~ help window.</td>
+</tr>
+<tr>
+<td>Close</td>
+<td><em>Closes</em> a window</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>footnote text goes here. <a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+            <aside>
+            <hr/>
+            <nav>
+            <ul class="articles_timeline">
+ 
+                <li class="previous_article">« <a href="./gitlab-setup-guide.html" title="Previous: GitLab setup guide">GitLab setup guide</a></li>
+ 
+                <li class="next_article"><a href="./article-writing-guide.html" title="Next: Article writing guide">Article writing guide</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+ 
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2014-03-12T00:00:00">Mar 12, 2014</time>
+            <h4>Category</h4>
+            <a class="category-link" href="/categories.html#guide-ref">guide</a> 
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article"> 
+                <li><a href="/tags.html#guide-ref">guide
+                    <span>5</span>
+</a></li>
+                <li><a href="/tags.html#markdown-ref">markdown
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#pelican-ref">pelican
+                    <span>2</span>
+</a></li>
+            </ul>
+
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-subtitle"><span class="site-name">Jiayi Zhou</span> - elegant maker</li>
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    </body>
+</html>
