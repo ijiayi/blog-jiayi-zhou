@@ -1,7 +1,7 @@
 Title: Android setup guide
 Category: guide
 Tags: android, guide
-Modified: 2014-04-03
+Modified: 2014-04-05
 
 [TOC]
 
@@ -12,6 +12,14 @@ Modified: 2014-04-03
 - Put Gmail, Browser, Camera, and Phone on the dock bar.
 
 ## Setting
+
+### Bluetooth
+
+- \* rename the device
+
+### AOKP ROM control
+
+- \+ toggles: sleep; vibrate; torch
 
 ### Device options
 
@@ -27,12 +35,10 @@ Modified: 2014-04-03
 
 - \* sleep = 2 mins (1 min)
 
-### Security
-
-- \* screen lock = None (Swipe)
-
 ### Date & time
 
+- \+ automatic date & time
+- \+ automatic time zone
 - \+ use 24-hour format
 - \* date format = 2014/12/31 (12/31/2014)
 
@@ -42,7 +48,6 @@ Touch *Build number* under *About phone* many times to enable *Developer options
 
 - \+ USB debugging
 - \* {window, transition, animator} scale = off (1x)
-- \+ Force GPU rendering
 - \* rumtime = ART (Dalvik)
 
 ### Accounts
@@ -78,6 +83,7 @@ Todoist, YouSnap
 - \* back up photos = over Wi-Fi only
 - \* photo size = standard size (full size)
 
+---
 
 # Sony Xperia Z 4.3.0
 
