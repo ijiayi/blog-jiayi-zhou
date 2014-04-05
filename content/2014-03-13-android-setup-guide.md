@@ -20,6 +20,7 @@ Modified: 2014-04-05
 ### AOKP ROM control
 
 - \+ toggles: sleep; vibrate; torch
+- \+ statusbar: battery: show battery % indicator; indicate charging; hide battery icon
 
 ### Device options
 
